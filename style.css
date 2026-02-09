@@ -1,5 +1,9 @@
 /* Add your CSS here */
 
+.navbar img {
+    height: 50px;
+    width: auto;
+}
 
 .navbar {
     background-color: #0071c5;
