@@ -2,7 +2,7 @@
 
 
 .navbar {
-    background-color: #080808;
+    background-color: #52bbf0;
     overflow: hidden;
 } 
 .navbar a {
@@ -15,7 +15,7 @@
     text-align: center;
 }
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #0071c5;
     color: black;
 }
 .navbar a.active {
