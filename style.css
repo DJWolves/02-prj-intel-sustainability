@@ -4,6 +4,9 @@
     height: 50px;
     width: auto;
     float: left; /* Makes the image float left so it appears before the links */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 
 .navbar {
