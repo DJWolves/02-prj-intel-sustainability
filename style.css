@@ -1,7 +1,7 @@
 /* Add your CSS here */
 
 .navbar img {
-    height: 50px;
+    height: 20px;
     width: auto;
     float: left; /* Makes the image float left so it appears before the links */
     padding-left: 10px;
