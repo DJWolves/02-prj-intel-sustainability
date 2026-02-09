@@ -3,6 +3,7 @@
 .navbar img {
     height: 50px;
     width: auto;
+    float: left; /* Makes the image float left so it appears before the links */
 }
 
 .navbar {
