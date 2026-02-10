@@ -16,17 +16,27 @@
       <label for="menu-toggle">
         <img src="img/intel-header-logo.svg" alt="Intel Logo" id="logo" />
       </label>
-      <!-- Nav links wrapper -->
+      <!-- Nav links wrapper with dropdown -->
       <div class="nav-links">
-        <a href="#yr-1968">1968</a>
-        <a href="#yr-1971">1971</a>
-        <a href="#yr-1978">1978</a>
-        <a href="#yr-1985">1985</a>
-        <a href="#yr-2006">2006</a>
-        <a href="#yr-2020">2020</a>
-        <a href="#yr-2022">2022</a>
-        <a href="#yr-2023">2023</a>
-        <a href="#yr-2024">2024</a>
+        <!-- Dropdown container -->
+        <div class="dropdown">
+          <!-- Dropdown toggle checkbox (hidden) -->
+          <input type="checkbox" id="dropdown-toggle" />
+          <!-- Dropdown button -->
+          <label for="dropdown-toggle" class="dropdown-btn">Years</label>
+          <!-- Dropdown content with year links -->
+          <div class="dropdown-content">
+            <a href="#yr-1968">1968</a>
+            <a href="#yr-1971">1971</a>
+            <a href="#yr-1978">1978</a>
+            <a href="#yr-1985">1985</a>
+            <a href="#yr-2006">2006</a>
+            <a href="#yr-2020">2020</a>
+            <a href="#yr-2022">2022</a>
+            <a href="#yr-2023">2023</a>
+            <a href="#yr-2024">2024</a>
+          </div>
+        </div>
       </div>
   </div>
 
