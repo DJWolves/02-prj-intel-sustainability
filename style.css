@@ -40,7 +40,7 @@ body {
 }
 
 .intel-2006-img {
-    width: 300px;
+    max-width: 100%;
     height: auto;
 }
 .main {
