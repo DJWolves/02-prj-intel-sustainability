@@ -87,4 +87,14 @@ body {
         max-width: 100%;
         height: auto;
     }
+    
+    /* Hide paragraph text by default */
+    .year p {
+        display: none;
+    }
+    
+    /* Show paragraph when hovering over the card */
+    .year:hover p {
+        display: block;
+    }
 }
