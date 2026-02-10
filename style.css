@@ -82,4 +82,9 @@ body {
         flex: 0 0 300px; /* Fixed width for each card, don't grow or shrink */
         scroll-snap-align: center; /* Snap each card to center when scrolling */
     }
+
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
 }
