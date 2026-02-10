@@ -1,5 +1,7 @@
 /* Add your CSS here */
 
+
+
 .navbar img {
     height: 28px;
     width: auto;
@@ -31,7 +33,7 @@
     background-color: #04AA6D;
     color: rgb(255, 255, 255);
 }
-
+@media (max-width: 991px) {
 body {
     font-family: neo sans, sans-serif;
     margin: 0;
@@ -62,6 +64,7 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
+}
 
 /* Carousel style for larger screens */
 @media (min-width: 992px) {
