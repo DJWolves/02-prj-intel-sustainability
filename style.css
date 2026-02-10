@@ -66,17 +66,20 @@ body {
 }
 
 
+/* Carousel style for larger screens */
 @media (min-width: 992px) {
-    /* Make the main container display items horizontally with scroll */
-    .year {
+    /* Make the section a horizontal scrolling container */
+    section {
         display: flex; /* Display items in a row */
         overflow-x: auto; /* Enable horizontal scrolling */
-        flex-wrap: nowrap; /* Prevent wrapping to next line */
+        scroll-snap-type: x mandatory; /* Snap to each card when scrolling */
+        gap: 20px; /* Space between cards */
+        padding: 20px 0; /* Add some padding top and bottom */
     }
     
+    /* Style each year card in the carousel */
     .year {
-        flex-shrink: 0; /* Prevent items from shrinking */
-        width: 300px; /* Fixed width for each item */
-        margin: 10px;
+        flex: 0 0 300px; /* Fixed width for each card, don't grow or shrink */
+        scroll-snap-align: center; /* Snap each card to center when scrolling */
     }
 }
