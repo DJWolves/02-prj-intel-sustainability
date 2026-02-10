@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.navbar {
+    background-color: #0071c5;
+    overflow: hidden;
+}
 .navbar img {
     height: 28px;
     width: auto;
