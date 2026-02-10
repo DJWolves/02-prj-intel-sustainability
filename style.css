@@ -52,6 +52,9 @@
         overflow: hidden;
         position: relative; /* Needed for positioning */
         text-align: center;
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Vertically center items */
+        flex-wrap: wrap; /* Allow items to wrap */
     }
 
     /* Hide the checkbox */
@@ -59,18 +62,33 @@
         display: none;
     }
 
-    /* Style the logo to look clickable */
+    /* Style the logo */
     #logo {
         height: 28px;
         width: auto;
         padding: 10px;
+        margin-right: 10px; /* Space between logo and dropdown */
+    }
+
+    /* Style the dropdown label that says "Years" */
+    .dropdown-label {
+        color: #080808;
+        padding: 14px 16px;
+        font-size: 17px;
         cursor: pointer; /* Shows it's clickable */
+        background-color: #0071c5;
+    }
+
+    .dropdown-label:hover {
+        background-color: #52bbf0; /* Change color on hover */
     }
 
     /* Hide nav links by default on small screens */
     .nav-links {
         display: none; /* Hidden by default */
         background-color: #0071c5;
+        width: 100%; /* Full width so links stack below */
+        flex-basis: 100%; /* Take full row */
     }
 
     /* Show nav links when checkbox is checked */
@@ -78,53 +96,17 @@
         display: block; /* Show the links */
     }
 
-    /* Dropdown styles for mobile */
-    .dropdown {
-        position: relative; /* Needed for positioning dropdown content */
-    }
-
-    /* Hide dropdown checkbox */
-    #dropdown-toggle {
-        display: none;
-    }
-
-    /* Style the dropdown button */
-    .dropdown-btn {
-        display: block; /* Make it a block element */
-        color: #080808;
-        padding: 14px 16px;
-        font-size: 17px;
-        text-align: center;
-        cursor: pointer; /* Show it's clickable */
-        background-color: #0071c5;
-    }
-
-    .dropdown-btn:hover {
-        background-color: #52bbf0;
-    }
-
-    /* Hide dropdown content by default */
-    .dropdown-content {
-        display: none; /* Hidden by default */
-        background-color: #0071c5;
-    }
-
-    /* Show dropdown content when checkbox is checked */
-    #dropdown-toggle:checked ~ .dropdown-content {
-        display: block; /* Show the dropdown */
-    }
-
-    /* Style the dropdown links */
-    .dropdown-content a {
+    /* Style the individual links as a vertical list */
+    .nav-links a {
         display: block; /* Stack links vertically */
         color: #080808;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-        text-align: center;
+        text-align: center; /* Center the text */
     }
 
-    .dropdown-content a:hover {
+    .nav-links a:hover {
         background-color: #52bbf0;
         color: black;
     }
@@ -153,96 +135,38 @@
 /* Carousel style for larger screens */
 @media (min-width: 992px) {
 
-    /* Navbar logo styles */
-    .navbar img {
-        height: 28px;
-        width: auto;
-        float: left; /* Makes the image float left so it appears before the links */
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
 
-    /* Navbar container */
-    .navbar {
-        background-color: #0071c5;
-        overflow: visible; /* Allow dropdown to show outside navbar */
-    }
+.navbar img {
+    height: 28px;
+    width: auto;
+    float: left; /* Makes the image float left so it appears before the links */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-    /* Show nav links on desktop */
-    .nav-links {
-        display: block; /* Always visible on desktop */
-        float: left; /* Float next to logo */
-    }
-
-    /* Hide mobile menu toggle on desktop */
-    #menu-toggle {
-        display: none;
-    }
-
-    label[for="menu-toggle"] {
-        float: left; /* Keep logo in place */
-    }
-
-    /* Desktop dropdown styles */
-    .dropdown {
-        position: relative; /* Needed for absolute positioning of dropdown */
-        display: inline-block; /* Make it inline */
-        float: left; /* Float next to other navbar items */
-    }
-
-    /* Hide dropdown checkbox on desktop */
-    #dropdown-toggle {
-        display: none;
-    }
-
-    /* Style the dropdown button for desktop */
-    .dropdown-btn {
-        display: block;
-        color: #080808;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        text-align: center;
-        cursor: pointer;
-        background-color: transparent;
-    }
-
-    .dropdown-btn:hover {
-        background-color: #52bbf0;
-        color: black;
-    }
-
-    /* Hide dropdown content by default on desktop */
-    .dropdown-content {
-        display: none; /* Hidden by default */
-        position: absolute; /* Position below the button */
-        background-color: #0071c5;
-        min-width: 160px; /* Minimum width */
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow */
-        z-index: 1; /* Make sure it appears on top */
-    }
-
-    /* Show dropdown on hover for desktop */
-    .dropdown:hover .dropdown-content {
-        display: block; /* Show on hover */
-    }
-
-    /* Style dropdown links */
-    .dropdown-content a {
-        display: block; /* Stack vertically */
-        color: #080808;
-        padding: 12px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        text-align: left;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #52bbf0;
-        color: black;
-    }
+.navbar {
+    background-color: #0071c5;
+    overflow: hidden;
+} 
+.navbar a {
+    float: left;
+    display: block;
+    color: #080808;
+    padding: 14px 16px; 
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #52bbf0;
+    color: black;
+}
+.navbar a.active {
+    background-color: #04AA6D;
+    color: rgb(255, 255, 255);
+}
 
 
 
