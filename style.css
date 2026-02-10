@@ -49,13 +49,9 @@
     /* Navbar styles for mobile */
     .navbar {
         background-color: #0071c5;
-        overflow: hidden;
-        position: relative; /* Needed for positioning */
+        position: relative; /* Needed for positioning dropdown */
         text-align: center;
-        display: flex; /* Use flexbox for layout */
-        align-items: center; /* Vertically center items */
-        flex-wrap: wrap; /* Allow items to wrap */
-        justify-content: center; /* Center the logo */
+        padding: 10px;
     }
 
     /* Hide the checkbox */
@@ -65,8 +61,9 @@
 
     /* Style the logo label wrapper */
     .logo-label {
-        display: block;
+        display: inline-block; /* Keep logo centered */
         cursor: pointer; /* Shows it's clickable */
+        position: relative; /* For dropdown positioning */
     }
 
     /* Style the logo */
@@ -81,18 +78,23 @@
         display: none;
     }
 
-    /* Hide nav links by default on small screens */
+    /* Hide nav links by default on small screens - dropdown style */
     .nav-links {
         display: none; /* Hidden by default */
+        position: absolute; /* Position as dropdown */
+        top: 100%; /* Below the logo */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Perfect center alignment */
         background-color: #0071c5;
-        width: 100%; /* Full width so links stack below */
-        flex-basis: 100%; /* Take full row */
+        min-width: 150px; /* Minimum width for dropdown */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for dropdown effect */
+        z-index: 1000; /* Ensure it appears above other content */
         text-align: center; /* Center the links */
     }
 
     /* Show nav links when checkbox is checked */
     #menu-toggle:checked ~ .nav-links {
-        display: block; /* Show the links */
+        display: block; /* Show the dropdown */
     }
 
     /* Style the individual links as a vertical list */
