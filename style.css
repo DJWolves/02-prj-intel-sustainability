@@ -1,6 +1,121 @@
 /* Add your CSS here */
 
 
+/*
+
+.navbar img {
+    height: 28px;
+    width: auto;
+    float: left; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    background-color: #0071c5;
+    overflow: hidden;
+} 
+.navbar a {
+    float: left;
+    display: block;
+    color: #080808;
+    padding: 14px 16px; 
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #52bbf0;
+    color: black;
+}
+.navbar a.active {
+    background-color: #04AA6D;
+    color: rgb(255, 255, 255);
+}
+*/
+
+@media (max-width: 991px) {
+    /* Basic styles for mobile */
+    body {
+        font-family: neo sans, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #080808;
+        text-align: center;
+    }
+
+    /* Navbar styles for mobile */
+    .navbar {
+        background-color: #0071c5;
+        overflow: hidden;
+        position: relative; /* Needed for positioning */
+    }
+
+    /* Hide the checkbox */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Style the logo to look clickable */
+    #logo {
+        height: 28px;
+        width: auto;
+        padding: 10px;
+        cursor: pointer; /* Shows it's clickable */
+    }
+
+    /* Hide nav links by default on small screens */
+    .nav-links {
+        display: none; /* Hidden by default */
+        background-color: #0071c5;
+    }
+
+    /* Show nav links when checkbox is checked */
+    #menu-toggle:checked ~ .nav-links {
+        display: block; /* Show the links */
+    }
+
+    /* Style the individual links as a vertical list */
+    .nav-links a {
+        display: block; /* Stack links vertically */
+        color: #080808;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    .nav-links a:hover {
+        background-color: #52bbf0;
+        color: black;
+    }
+
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .main {
+        margin: 20px;
+    }
+
+    .year {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        border-style: solid;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Carousel style for larger screens */
+@media (min-width: 992px) {
+
 
 .navbar img {
     height: 28px;
@@ -33,41 +148,10 @@
     background-color: #04AA6D;
     color: rgb(255, 255, 255);
 }
-@media (max-width: 991px) {
-body {
-    font-family: neo sans, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #080808;
-    text-align: center;
-}
-
-.img {
-    max-width: 100%;
-    height: auto;
-}
 
 
 
-.main {
-    margin: 20px;
-}
 
-.year {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  margin: 5px;
-  border-radius: 5px;
-  border-style: solid;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-}
-
-/* Carousel style for larger screens */
-@media (min-width: 992px) {
     /* Make the section a horizontal scrolling container */
     section {
         display: flex; /* Display items in a row */
