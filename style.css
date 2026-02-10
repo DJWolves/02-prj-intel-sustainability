@@ -46,9 +46,8 @@ body {
 .main {
     margin: 20px;
 }
+
 .year {
-  padding: 0;
-  border-style: solid;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding: 5px;
+  margin: 5px;
 }
