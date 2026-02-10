@@ -37,6 +37,7 @@ body {
     margin: 0;
     padding: 0;
     color: #080808;
+    text-align: center;
 }
 
 .img {
@@ -62,4 +63,20 @@ body {
   border-radius: 5px;
   border-style: solid;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (min-width: 992px) {
+    /* Make the main container display items horizontally with scroll */
+    .main {
+        display: flex; /* Display items in a row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        flex-wrap: nowrap; /* Prevent wrapping to next line */
+    }
+    
+    .year {
+        flex-shrink: 0; /* Prevent items from shrinking */
+        width: 300px; /* Fixed width for each item */
+        margin: 10px;
+    }
 }
