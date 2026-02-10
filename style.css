@@ -55,6 +55,7 @@
         display: flex; /* Use flexbox for layout */
         align-items: center; /* Vertically center items */
         flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center the logo */
     }
 
     /* Hide the checkbox */
@@ -62,25 +63,22 @@
         display: none;
     }
 
+    /* Style the logo label wrapper */
+    .logo-label {
+        display: block;
+        cursor: pointer; /* Shows it's clickable */
+    }
+
     /* Style the logo */
     #logo {
         height: 28px;
         width: auto;
         padding: 10px;
-        margin-right: 10px; /* Space between logo and dropdown */
     }
 
-    /* Style the dropdown label that says "Years" */
+    /* Hide the "Years" dropdown label on small screens */
     .dropdown-label {
-        color: #080808;
-        padding: 14px 16px;
-        font-size: 17px;
-        cursor: pointer; /* Shows it's clickable */
-        background-color: #0071c5;
-    }
-
-    .dropdown-label:hover {
-        background-color: #52bbf0; /* Change color on hover */
+        display: none;
     }
 
     /* Hide nav links by default on small screens */
@@ -89,6 +87,7 @@
         background-color: #0071c5;
         width: 100%; /* Full width so links stack below */
         flex-basis: 100%; /* Take full row */
+        text-align: center; /* Center the links */
     }
 
     /* Show nav links when checkbox is checked */
@@ -159,6 +158,11 @@
         display: none;
     }
 
+    /* Hide the logo label wrapper on larger screens (logo not clickable) */
+    .logo-label {
+        display: block;
+    }
+
     /* Style the logo */
     #logo {
         height: 28px;
@@ -186,6 +190,7 @@
         background-color: #0071c5;
         width: 100%; /* Full width so links stack below */
         flex-basis: 100%; /* Take full row */
+        text-align: center; /* Center the links */
     }
 
     /* Show nav links when checkbox is checked */
