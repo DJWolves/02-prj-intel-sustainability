@@ -68,7 +68,9 @@
     .logo-label {
         display: flex;
         align-items: center;
+        justify-content: center;
         cursor: pointer; /* Shows it's clickable */
+        flex-basis: 100%; /* Put logo on its own line */
     }
 
     /* Style the logo */
@@ -78,17 +80,19 @@
         padding: 10px;
     }
 
-    /* Hide the "Years" dropdown label by default on small screens */
+    /* Hide the "Years" dropdown label until logo is clicked */
     .dropdown-label {
-        display: none; /* Hidden until logo is clicked */
+        display: none;
         color: #080808;
         padding: 14px 16px;
         font-size: 17px;
         cursor: pointer; /* Shows it's clickable */
         background-color: #0071c5;
+        width: 100%; /* Center the label on its own line */
+        text-align: center;
     }
 
-    /* Show dropdown label when logo is clicked */
+    /* Show "Years" label when logo is clicked */
     #logo-toggle:checked ~ .dropdown-label {
         display: block;
     }
@@ -175,7 +179,7 @@
         display: none;
     }
 
-    /* Logo label wrapper on larger screens */
+    /* Hide the logo label wrapper on larger screens (logo not clickable) */
     .logo-label {
         display: block;
     }
@@ -190,7 +194,6 @@
 
     /* Style the dropdown label that says "Years" */
     .dropdown-label {
-        display: block; /* Always visible on larger screens */
         color: #080808;
         padding: 14px 16px;
         font-size: 17px;
