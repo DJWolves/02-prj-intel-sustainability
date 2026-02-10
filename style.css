@@ -47,6 +47,8 @@ body {
     margin: 20px;
 }
 .year {
-  padding: 10px;
+  padding: 5px;
   border-style: solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
