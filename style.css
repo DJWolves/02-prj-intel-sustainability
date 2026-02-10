@@ -1,29 +1,24 @@
 /* Add your CSS here */
 
-.navbar {
-    background-color: #0071c5;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap; /* Lets items wrap on smaller screens */
-    align-items: center;
-}
-
-.navbar {
-    background-color: #0071c5;
-    overflow: hidden;
-}
 .navbar img {
     height: 28px;
     width: auto;
+    float: left; /* Makes the image float left so it appears before the links */
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.navbar {
+    background-color: #0071c5;
+    overflow: hidden;
+} 
 .navbar a {
+    float: left;
     display: block;
     color: #080808;
-    padding: 14px 16px;
+    padding: 14px 16px; 
     text-decoration: none;
     font-size: 17px;
     text-align: center;
@@ -44,37 +39,7 @@ body {
     color: #080808;
 }
 
-/* Keep images from overflowing on small screens */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .intel-2006-img {
     width: 300px;
     height: auto;
-}
-
-/* Simple responsive tweaks for phones */
-@media (max-width: 600px) {
-    body {
-        margin: 12px;
-    }
-
-    .navbar {
-        align-items: stretch; /* Makes links full-width */
-    }
-
-    .navbar img {
-        margin-right: auto;
-    }
-
-    .navbar a {
-        text-align: left;
-        width: 100%;
-    }
-
-    .intel-2006-img {
-        width: 100%;
-    }
 }
