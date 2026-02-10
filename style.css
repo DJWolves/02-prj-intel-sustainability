@@ -51,6 +51,7 @@
         background-color: #0071c5;
         overflow: hidden;
         position: relative; /* Needed for positioning */
+        text-align: center;
     }
 
     /* Hide the checkbox */
