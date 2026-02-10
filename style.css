@@ -34,7 +34,7 @@
 
 body {
     font-family: neo sans, sans-serif;
-    margin: 20px;
+    margin: 0;
     padding: 0;
     color: #080808;
 }
@@ -42,4 +42,7 @@ body {
 .intel-2006-img {
     width: 300px;
     height: auto;
+}
+.main {
+    margin: 20px;
 }
